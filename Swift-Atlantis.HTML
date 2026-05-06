@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swift Atlantis Contracting L.L.C</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Barlow+Condensed:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+<body class="bg-navy text-white overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] h-[72px] bg-navy/90 backdrop-blur-md border-b border-white/[0.07]">
+  <a href="#" class="flex items-center gap-3 no-underline">
+    <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="20,4 36,34 4,34" fill="none" stroke="white" stroke-width="2"/>
+      <rect x="16" y="16" width="8" height="18" fill="#2589e8"/>
+      <rect x="12" y="20" width="4" height="14" fill="#4fb3e8" opacity="0.6"/>
+      <rect x="24" y="22" width="4" height="12" fill="#4fb3e8" opacity="0.6"/>
+      <path d="M14 28 Q20 24 26 28" stroke="white" stroke-width="1" fill="none"/>
+    </svg>
+    <div class="flex flex-col leading-none">
+      <span class="font-condensed text-base font-bold tracking-[0.08em] text-white">Swift Atlantis</span>
+      <span class="text-[10px] font-light tracking-[0.2em] text-sky uppercase">Contracting L.L.C</span>
+    </div>
+  </a>
+
+  <!-- Desktop links -->
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="#about" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">About</a></li>
+    <li><a href="#services" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Services</a></li>
+    <li><a href="#projects" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Projects</a></li>
+    <li><a href="#leadership" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Leadership</a></li>
+    <li><a href="#contact" class="rounded-lg text-[13px] font-semibold tracking-[0.12em] uppercase bg-blue text-white px-5 py-2 rounded-sm hover:bg-blue-light transition-colors no-underline">Contact Us</a></li>
+  </ul>
+
+  <!-- Hamburger -->
+  <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" onclick="toggleMenu()">
+    <span class="w-6 h-0.5 bg-white block"></span>
+    <span class="w-6 h-0.5 bg-white block"></span>
+    <span class="w-6 h-0.5 bg-white block"></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed top-[72px] left-0 right-0 z-40 bg-navy/98 backdrop-blur-md border-b border-white/10 flex-col px-[5%] py-6 gap-4">
+  <a href="#about" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">About</a>
+  <a href="#services" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Services</a>
+  <a href="#projects" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Projects</a>
+  <a href="#leadership" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Leadership</a>
+  <a href="#contact" class="text-sm font-semibold tracking-widest uppercase bg-blue text-white px-5 py-3 rounded-sm text-center block mt-2 no-underline" onclick="toggleMenu()">Contact Us</a>
+</div>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="hero-bg absolute inset-0"></div>
+  <div class="grid-overlay absolute inset-0"></div>
+  <!-- bottom accent line -->
+  <div class="absolute bottom-0 left-0 right-0 h-[3px]" style="background: linear-gradient(90deg, transparent, #1a6fc4, #4fb3e8, #c9a84c, transparent)"></div>
+
+  <div class="relative z-10 px-[5%] pt-[120px] pb-20 max-w-[900px] w-full">
+    <div class="animate-fade-up-1 inline-flex items-center gap-2.5 mb-7">
+      <div class="w-10 h-0.5 bg-gold"></div>
+      <span class="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold">Building Excellence in the UAE</span>
+    </div>
+    <h1 class="animate-fade-up-2 font-condensed font-extrabold uppercase leading-[0.92] tracking-[-0.01em] mb-7" style="font-size: clamp(52px, 9vw, 100px)">
+      Swift<br>
+      <span class="text-sky">Atlantis</span><br>
+      Contracting
+    </h1>
+    <p class="animate-fade-up-3 text-[18px] font-light leading-[1.7] text-steel max-w-[560px] mb-12">
+      A Dubai-based general contracting company delivering integrated construction solutions — from excavation to handover — with precision, quality, and trust.
+    </p>
+    <div class="animate-fade-up-4 flex flex-wrap gap-4">
+      <a href="#projects" class="rounded-lg inline-flex items-center gap-2 bg-blue text-white px-8 py-3.5 rounded-sm text-[13px] font-semibold tracking-[0.1em] uppercase no-underline hover:bg-blue-light hover:-translate-y-px transition-all">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        View Projects
+      </a>
+      <a href="#contact" class="rounded-lg inline-flex items-center gap-2 bg-transparent text-white px-8 py-3.5 rounded-sm border border-white/25 text-[13px] font-semibold tracking-[0.1em] uppercase no-underline hover:border-sky hover:text-sky transition-all">Get In Touch →</a>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="animate-fade-up-5 absolute right-[5%] bottom-20 z-10 border border-white/10 rounded overflow-hidden backdrop-blur-md bg-navy/60 hidden sm:flex flex-col">
+    <div class="px-7 py-5 border-b border-white/[0.08] text-center">
+      <div class="font-condensed text-[36px] font-bold text-gold-light leading-none mb-1">20+</div>
+      <div class="text-[10px] font-normal tracking-[0.2em] uppercase text-gray-mid">Years Experience</div>
+    </div>
+    <div class="px-7 py-5 border-b border-white/[0.08] text-center">
+      <div class="font-condensed text-[36px] font-bold text-gold-light leading-none mb-1">24+</div>
+      <div class="text-[10px] font-normal tracking-[0.2em] uppercase text-gray-mid">Projects Delivered</div>
+    </div>
+    <div class="px-7 py-5 text-center">
+      <div class="font-condensed text-[36px] font-bold text-gold-light leading-none mb-1">2022</div>
+      <div class="text-[10px] font-normal tracking-[0.2em] uppercase text-gray-mid">Est. Dubai, UAE</div>
+    </div>
+  </div>
+
+  <!-- Mobile stats row -->
+  <div class="absolute bottom-3  left-[5%] right-[5%] flex gap-3 sm:hidden z-10">
+    <div class="flex-1 bg-navy/70 backdrop-blur-sm border border-white/10 rounded p-3 text-center">
+      <div class="font-condensed text-2xl font-bold text-gold-light">20+</div>
+      <div class="text-[9px] tracking-widest uppercase text-gray-mid">Yrs Exp.</div>
+    </div>
+    <div class="flex-1 bg-navy/70 backdrop-blur-sm border border-white/10 rounded p-3 text-center">
+      <div class="font-condensed text-2xl font-bold text-gold-light">24+</div>
+      <div class="text-[9px] tracking-widest uppercase text-gray-mid">Projects</div>
+    </div>
+    <div class="flex-1 bg-navy/70 backdrop-blur-sm border border-white/10 rounded p-3 text-center">
+      <div class="font-condensed text-2xl font-bold text-gold-light">2022</div>
+      <div class="text-[9px] tracking-widest uppercase text-gray-mid">Est. UAE</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-[1300px] mx-auto">
+    <div>
+      <div class="inline-flex items-center gap-2.5 mb-4">
+        <div class="w-8 h-0.5 bg-gold"></div>
+        <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">About Us</span>
+      </div>
+      <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none mb-6" style="font-size: clamp(36px, 5vw, 58px)">Built on Trust,<br>Delivered with Precision</h2>
+      <p class="text-base leading-[1.85] text-steel mb-5">
+        Swift Atlantis Contracting L.L.C was established on 15th September 2022 under Commercial License No. 1080914, approved by the Dubai Economic Department and Dubai Municipality.
+      </p>
+      <p class="text-base leading-[1.85] text-steel mb-5">
+        We are licensed to carry out integrated construction works as a main contractor — from excavations through to handover of building completion certificates — with approved scope for G+1 and complex multi-storey structures.
+      </p>
+      <p class="text-base leading-[1.85] text-steel mb-10">
+        Our approach combines rigorous compliance with local authority regulations, an unwavering commitment to safety and quality, and on-time delivery aligned with project programs and consultant directives.
+      </p>
+
+    <!-- About us Info -->
+      <div class="grid grid-cols-2 gap-px bg-white/[0.06] rounded overflow-hidden">
+     
+        <div class="bg-white/[0.03] p-5">
+          <div class="text-[10px] font-semibold tracking-[0.25em] uppercase text-gray-mid mb-1.5">Legal Type</div>
+          <div class="text-[15px] font-semibold text-white">LLC (Single Owner)</div>
+        </div>
+        <div class="bg-white/[0.03] p-5">
+          <div class="text-[10px] font-semibold tracking-[0.25em] uppercase text-gray-mid mb-1.5">Established</div>
+          <div class="text-[15px] font-semibold text-white">September 2022</div>
+        </div>
+        <div class="bg-white/[0.03] p-5">
+          <div class="text-[10px] font-semibold tracking-[0.25em] uppercase text-gray-mid mb-1.5">Activity</div>
+          <div class="text-[15px] font-semibold text-white">Building Contracting</div>
+        </div>
+        <div class="bg-white/[0.03] p-5">
+          <div class="text-[10px] font-semibold tracking-[0.25em] uppercase text-gray-mid mb-1.5">Jurisdiction</div>
+          <div class="text-[15px] font-semibold text-white">Dubai, UAE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative h-[360px] sm:h-[440px] lg:h-[500px]">
+      <div class="about-img-main absolute top-0 left-0 w-4/5 h-4/5 rounded"></div>
+      <div class="about-img-accent absolute bottom-0 right-0 w-[55%] h-[55%] rounded border-4 border-navy"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue px-5 py-4 rounded border-[3px] border-navy text-center z-10">
+        <div class="font-condensed text-[40px] font-extrabold text-white leading-none">G+1</div>
+        <div class="text-[10px] tracking-[0.15em] uppercase text-sky">Approved Scope</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="scroll-mt-[72px] clip-services bg-navy-mid px-[5%] py-[160px] -my-10">
+  <div class="max-w-[1300px] mx-auto">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-14 gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-0.5 bg-gold"></div>
+          <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">What We Do</span>
+        </div>
+        <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Our Services</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.04] rounded-md overflow-hidden">
+
+      <!-- Card -->
+      <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
+        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        <div class="w-13 h-13 bg-blue/15 rounded-md flex items-center justify-center mb-6 w-[52px] h-[52px]">
+          <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 21h18M3 18h18M6 18V9m4 9V9m4 9V9m4 9V9M3 9l9-6 9 6"/></svg>
+        </div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">General Contracting</div>
+        <p class="text-sm leading-[1.7] text-gray-mid">Full-scope main contractor services for residential, commercial, and mixed-use projects — managing all trades from ground-breaking to handover.</p>
+      </div>
+
+      <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
+        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
+          <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-8 8 8v10M10 20v-5h4v5"/></svg>
+        </div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Residential Buildings</div>
+        <p class="text-sm leading-[1.7] text-gray-mid">Construction of villas, townhouses, and multi-storey apartment buildings for private developers and government-linked clients across the UAE.</p>
+      </div>
+
+      <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
+        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
+          <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6M3 10h18"/></svg>
+        </div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Commercial Projects</div>
+        <p class="text-sm leading-[1.7] text-gray-mid">Hotel apartments, retail complexes, factories, and commercial facilities — executed with precision engineering and timely delivery.</p>
+      </div>
+
+      <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
+        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
+          <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Resort & Hospitality</div>
+        <p class="text-sm leading-[1.7] text-gray-mid">Specialized construction for luxury resorts, hotels, and hospitality facilities — balancing aesthetics with structural integrity.</p>
+      </div>
+
+      <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
+        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
+          <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22V12M12 12L7 7M12 12l5-5M3 21h18M6 21V10M18 21V10"/></svg>
+        </div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Site Supervision</div>
+        <p class="text-sm leading-[1.7] text-gray-mid">Expert on-site management from excavation to final inspection, ensuring compliance with Dubai Municipality and authority standards.</p>
+      </div>
+
+      <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
+        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
+          <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Project Consultancy</div>
+        <p class="text-sm leading-[1.7] text-gray-mid">Architectural and engineering consultancy services drawing on 20+ years of experience across UAE and Egypt project environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy">
+  <div class="max-w-[1300px] mx-auto">
+    <div class="mb-14">
+      <div class="inline-flex items-center gap-2.5 mb-4">
+        <div class="w-8 h-0.5 bg-gold"></div>
+        <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Portfolio</span>
+      </div>
+      <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Projects by Our Director</h2>
+      <p class="mt-4 text-[15px] text-gray-mid max-w-[620px] leading-[1.7]">
+        Below are key projects managed by Eng. Ahmed Nada across UAE and Egypt — spanning luxury resorts, residential towers, commercial buildings, and more.
+      </p>
+
+      <div class="flex gap-1 mt-8 bg-white/5 rounded p-1 w-fit flex-wrap">
+        <button class="tab-btn active px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all bg-blue text-white" onclick="filterProjects('all', this)">All</button>
+        <button class="tab-btn px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all text-gray-mid hover:text-white" onclick="filterProjects('uae', this)">UAE</button>
+        <button class="tab-btn px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all text-gray-mid hover:text-white" onclick="filterProjects('ksa', this)">KSA</button>
+        <button class="tab-btn px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all text-gray-mid hover:text-white" onclick="filterProjects('egypt', this)">Egypt</button>
+      </div>
+    </div>
+
+    <div id="projectsList" class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.04] rounded-md overflow-hidden">
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">01</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Royal Miramar Resort — Al Fujairah</div>
+          <div class="text-xs text-gray-mid">316-Room Luxury Resort · Al Fujairah, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Resort</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">02</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Damas Hotel — Dibba Al Fujairah</div>
+          <div class="text-xs text-gray-mid">B+G+9 Floors · Fujairah, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Hotel</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">03</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">2 Residential Buildings — Muwaileh</div>
+          <div class="text-xs text-gray-mid">B+G+7 Floors · Sharjah, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">04</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Residential Building — Al Khan</div>
+          <div class="text-xs text-gray-mid">G+5P+15 Floors · Sharjah, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">05</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Hotel Apartment — Palm Jumeirah</div>
+          <div class="text-xs text-gray-mid">B+G+8 Floors · Dubai, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Hotel</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">06</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">2 Residential Buildings — Nadd Al Hamar</div>
+          <div class="text-xs text-gray-mid">B+G+7 Floors · Dubai, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">07</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Gold Factory — Jebel Ali</div>
+          <div class="text-xs text-gray-mid">G+2 Floors · Dubai, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Industrial</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">08</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">95 Townhouses + Retail Mall</div>
+          <div class="text-xs text-gray-mid">Jumeirah Golf Estates · Dubai, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Mixed Use</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">09</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Residential Building — Studio City</div>
+          <div class="text-xs text-gray-mid">B+G+8 Floors · Dubai, UAE</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">10</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">11 Residential Buildings — Meydan One</div>
+          <div class="text-xs text-gray-mid">2B+G+7 to 10 Floors · Nadd Al Sheba, Dubai</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="ksa">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">11</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Residential Building — Jeddah</div>
+          <div class="text-xs text-gray-mid">G+4 Floors + Roof · Jeddah, Saudi Arabia</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="egypt">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">12</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Al Loloaa Hospital</div>
+          <div class="text-xs text-gray-mid">G+Mezzanine+5 Floors · Cairo-Alexandria Desert Road</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Healthcare</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="egypt">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">13</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Jaz Belvedere Resort — Sharm El Sheikh</div>
+          <div class="text-xs text-gray-mid">Under Travco Group · South Sinai, Egypt</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Resort</span>
+      </div>
+
+      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="egypt">
+        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">14</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-white mb-0.5 truncate">Samaya & Lamaya Resorts</div>
+          <div class="text-xs text-gray-mid">Under Travco Group · Marsa Alam, Egypt</div>
+        </div>
+        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Resort</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy-mid">
+  <div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <!-- Card -->
+    <div class="bg-white/[0.03] border border-white/[0.08] rounded-md overflow-hidden">
+      <div class="p-10 text-center relative" style="background: linear-gradient(135deg, #0a1628, rgba(26,111,196,0.3))">
+        <div class="w-[100px] h-[100px] rounded-full bg-blue border-[3px] border-white/15 mx-auto mb-4 flex items-center justify-center font-condensed text-[36px] font-bold text-white">AN</div>
+        <div class="font-condensed text-[26px] font-bold uppercase tracking-[0.04em] mb-1.5">Eng. Ahmed Nada</div>
+        <div class="text-xs tracking-[0.2em] uppercase text-sky">Owner · Managing Director</div>
+      </div>
+      <div class="px-10 py-8">
+        <div class="flex items-start gap-3.5 py-3 border-b border-white/[0.06] text-sm"><span class="text-gray-mid text-xs font-semibold tracking-[0.1em] uppercase min-w-[100px]">Education</span><span class="text-white">B.Sc. Architectural Engineering, Mansoura University (2002)</span></div>
+        <div class="flex items-center gap-3.5 py-3 border-b border-white/[0.06] text-sm"><span class="text-gray-mid text-xs font-semibold tracking-[0.1em] uppercase min-w-[100px]">Experience</span><span class="text-white">20+ Years in Construction</span></div>
+        <div class="flex items-center gap-3.5 py-3 border-b border-white/[0.06] text-sm"><span class="text-gray-mid text-xs font-semibold tracking-[0.1em] uppercase min-w-[100px]">Regions</span><span class="text-white">UAE & Egypt</span></div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <div class="inline-flex items-center gap-2.5 mb-4">
+        <div class="w-8 h-0.5 bg-gold"></div>
+        <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Leadership</span>
+      </div>
+      <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none mb-6" style="font-size: clamp(36px, 5vw, 58px)">Two Decades of<br>Construction Mastery</h2>
+      <p class="text-base leading-[1.85] text-steel mb-5">
+        Eng. Ahmed Mohamed Nada brings over 20 years of hands-on construction experience to Swift Atlantis. A graduate of Mansoura University's Faculty of Engineering (Architectural Engineering, 2002), he has progressed through every engineering stage — from site observation and supervision to full project contracting and consultancy.
+      </p>
+      <p class="text-base leading-[1.85] text-steel mb-8">
+        His portfolio spans luxury resorts, high-rise residential towers, hospitals, factories, and retail complexes across the UAE and Egypt — serving prestigious clients and working under major development groups including Travco Group.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">Site Supervision</span>
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">Project Management</span>
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">Structural Engineering</span>
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">Consultancy</span>
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">UAE Regulations</span>
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">Luxury Hospitality</span>
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">High-Rise Construction</span>
+        <span class="px-4 py-1.5 border border-sky/25 rounded-sm text-[11px] font-semibold tracking-[0.1em] uppercase text-sky bg-sky/[0.06]">Healthcare Facilities</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section id="credentials" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy">
+  <div class="max-w-[1300px] mx-auto">
+    <div class="inline-flex items-center gap-2.5 mb-4">
+      <div class="w-8 h-0.5 bg-gold"></div>
+      <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Certifications</span>
+    </div>
+    <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Licensed & Certified</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
+
+      <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
+          <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div class="font-condensed text-[18px] font-bold uppercase tracking-[0.04em] mb-2 text-white">Commercial License</div>
+        <div class="text-xs text-gray-mid leading-[1.5] mb-2">Issued by Dubai Dept. of Economy & Tourism</div>
+        <div class="text-[11px] text-sky font-semibold opacity-80">No. 1080914</div>
+      </div>
+
+      <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
+          <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="font-condensed text-[18px] font-bold uppercase tracking-[0.04em] mb-2 text-white">Commercial Register</div>
+        <div class="text-xs text-gray-mid leading-[1.5] mb-2">Registered with Dubai Economic Development</div>
+        <div class="text-[11px] text-sky font-semibold opacity-80">Reg. No. 1762575</div>
+      </div>
+
+      <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
+          <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <div class="font-condensed text-[18px] font-bold uppercase tracking-[0.04em] mb-2 text-white">Chamber Member</div>
+        <div class="text-xs text-gray-mid leading-[1.5] mb-2">Dubai Chamber of Commerce & Industry</div>
+        <div class="text-[11px] text-sky font-semibold opacity-80">Member No. 418548</div>
+      </div>
+
+      <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
+          <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="font-condensed text-[18px] font-bold uppercase tracking-[0.04em] mb-2 text-white">VAT Registered</div>
+        <div class="text-xs text-gray-mid leading-[1.5] mb-2">UAE Federal Tax Authority · VAT Certificate</div>
+        <div class="text-[11px] text-sky font-semibold opacity-80">TRN 104010741700003</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy-mid relative overflow-hidden">
+  <div class="absolute -top-[200px] -right-[200px] w-[600px] h-[600px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(26,111,196,0.12) 0%, transparent 70%)"></div>
+  <div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start relative z-10">
+
+    <div>
+      <div class="inline-flex items-center gap-2.5 mb-4">
+        <div class="w-8 h-0.5 bg-gold"></div>
+        <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Get in Touch</span>
+      </div>
+      <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none mb-6" style="font-size: clamp(36px, 5vw, 58px)">Let's Build<br>Together</h2>
+      <p class="text-base leading-[1.8] text-steel mb-10">
+        Ready to start your next construction project in Dubai or the UAE? Contact Swift Atlantis Contracting to discuss your requirements with our team.
+      </p>
+
+<div class="flex flex-col gap-y-3  rounded-md p-2">
+  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+          <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-mid mb-0.5">Office Address</div>
+            <div class="text-sm text-white">P.O. Box 206, Dubai Industrial City — Shb-2, Block 3<br>Dubai, United Arab Emirates</div>
+          </div>
+        </div>
+  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+          <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          </div>
+          <div>
+            <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-mid mb-0.5">Mobile</div>
+            <div class="text-sm text-white">+971 52-1500177</div>
+          </div>
+        </div>
+  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+          <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-mid mb-0.5">Email</div>
+            <div class="text-sm text-white">nada_189@yahoo.com</div>
+          </div>
+        </div>
+  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+          <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
+            <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <div>
+            <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-mid mb-0.5">License</div>
+            <div class="text-sm text-white">1080914 · Building Contracting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="bg-white/[0.03] border border-white/[0.07] rounded-md p-8 md:p-10">
+      <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-7 text-white">Send an Enquiry</div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">First Name</label>
+          <input type="text" placeholder="John" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+        </div>
+        <div>
+          <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Last Name</label>
+          <input type="text" placeholder="Smith" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Email Address</label>
+        <input type="email" placeholder="john@example.com" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Phone Number</label>
+        <input type="tel" placeholder="+971 XX XXX XXXX" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Project Type</label>
+        <select class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors appearance-none" style="background-color: rgba(255,255,255,0.05)">
+          <option value="" style="background:#0a1628">Select project type...</option>
+          <option style="background:#0a1628">Residential Building</option>
+          <option style="background:#0a1628">Commercial Building</option>
+          <option style="background:#0a1628">Hotel / Resort</option>
+          <option style="background:#0a1628">Industrial / Factory</option>
+          <option style="background:#0a1628">Villa / Townhouse</option>
+          <option style="background:#0a1628">Other</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Message</label>
+        <textarea rows="4" placeholder="Tell us about your project — location, scope, timeline..." class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25 resize-y min-h-[120px]"></textarea>
+      </div>
+
+      <button class="w-full bg-blue text-white border-0 px-8 py-3.5 rounded-sm font-barlow text-[13px] font-semibold tracking-[0.12em] uppercase cursor-pointer hover:bg-blue-light transition-colors mt-2">Submit Enquiry →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black/40 border-t border-white/[0.06] py-10 px-[5%]">
+  <div class="max-w-[1300px] mx-auto flex flex-col sm:flex-row items-center sm:items-center justify-between gap-4">
+    <a href="#" class="flex items-center gap-2.5 no-underline">
+      <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+        <polygon points="20,4 36,34 4,34" fill="none" stroke="#4fb3e8" stroke-width="2"/>
+        <rect x="16" y="16" width="8" height="18" fill="#2589e8"/>
+        <rect x="12" y="20" width="4" height="14" fill="#4fb3e8" opacity="0.5"/>
+        <rect x="24" y="22" width="4" height="12" fill="#4fb3e8" opacity="0.5"/>
+      </svg>
+      <span class="font-condensed text-sm font-bold text-steel tracking-[0.06em] uppercase">Swift Atlantis Contracting L.L.C</span>
+    </a>
+    <div class="text-right">
+      <div class="text-xs text-gray-mid mb-1">License No. 1080914 · Dubai, United Arab Emirates</div>
+      <div class="text-[11px] text-white/20">© 2024 Swift Atlantis Contracting L.L.C · All rights reserved</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+  }
+
+  function filterProjects(region, btn) {
+    document.querySelectorAll('.tab-btn').forEach(t => {
+      t.classList.remove('bg-blue', 'text-white');
+      t.classList.add('text-gray-mid');
+    });
+    btn.classList.add('bg-blue', 'text-white');
+    btn.classList.remove('text-gray-mid');
+
+    document.querySelectorAll('.project-row').forEach(row => {
+      if (region === 'all' || row.dataset.region === region) {
+        row.style.display = 'flex';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobile-menu');
+    const hamburger = document.getElementById('hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+</script>
+</body>
+</html>
