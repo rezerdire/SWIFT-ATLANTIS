@@ -11,7 +11,7 @@ body { font-family: 'Barlow', sans-serif; }
   #op-track {
   will-change: transform;
 }
-
+    
   .grid-overlay {
     background-image:
       linear-gradient(rgba(74,163,232,0.05) 1px, transparent 1px),
@@ -53,9 +53,6 @@ body { font-family: 'Barlow', sans-serif; }
   .slide.active.anim-right { animation: slideIn 0.45s ease both; }
   .slide.active.anim-left  { animation: slideInLeft 0.45s ease both; }
  
-  /* ── ONGOING PROJECTS progress bars ── */
-  .progress-bar { transition: width 1.4s cubic-bezier(0.4,0,0.2,1); }
- 
   /* ── VISION CARD hover glow ── */
   .vision-card {
     position: relative;
@@ -80,7 +77,7 @@ body { font-family: 'Barlow', sans-serif; }
     border: 1px solid rgba(79,179,232,0.25);
     transition: background 0.3s, border-color 0.3s, transform 0.25s;
   }
-  .value-pill:hover {
+  .value-pill:hover { 
     background: linear-gradient(135deg, rgba(26,111,196,0.3), rgba(79,179,232,0.15));
     border-color: rgba(79,179,232,0.5);
     transform: translateY(-2px);
