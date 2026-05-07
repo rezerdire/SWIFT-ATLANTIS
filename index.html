@@ -12,8 +12,9 @@
 <script src="script.js"></script>
 
 </head>
-<body class="bg-navy text-white overflow-x-hidden">
 
+<body class="bg-navy text-white overflow-x-hidden">
+ 
 <!-- NAV -->
 <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] h-[72px] bg-navy/90 backdrop-blur-md border-b border-white/[0.07]">
   <a href="#" class="flex items-center gap-3 no-underline">
@@ -29,40 +30,38 @@
       <span class="text-[10px] font-light tracking-[0.2em] text-sky uppercase">Contracting L.L.C</span>
     </div>
   </a>
-
-  <!-- Desktop links -->
   <ul class="hidden md:flex gap-8 list-none">
     <li><a href="#about" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">About</a></li>
+    <li><a href="#vision" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Vision</a></li>
     <li><a href="#services" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Services</a></li>
     <li><a href="#projects" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Projects</a></li>
+    <li><a href="#ongoing" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Ongoing</a></li>
     <li><a href="#leadership" class="text-[13px] font-normal tracking-[0.12em] uppercase text-steel hover:text-white transition-colors no-underline">Leadership</a></li>
     <li><a href="#contact" class="rounded-lg text-[13px] font-semibold tracking-[0.12em] uppercase bg-blue text-white px-5 py-2 rounded-sm hover:bg-blue-light transition-colors no-underline">Contact Us</a></li>
   </ul>
-
-  <!-- Hamburger -->
   <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" onclick="toggleMenu()">
     <span class="w-6 h-0.5 bg-white block"></span>
     <span class="w-6 h-0.5 bg-white block"></span>
     <span class="w-6 h-0.5 bg-white block"></span>
   </button>
 </nav>
-
+ 
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="fixed top-[72px] left-0 right-0 z-40 bg-navy/98 backdrop-blur-md border-b border-white/10 flex-col px-[5%] py-6 gap-4">
   <a href="#about" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">About</a>
+  <a href="#vision" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Vision</a>
   <a href="#services" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Services</a>
   <a href="#projects" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Projects</a>
+  <a href="#ongoing" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Ongoing</a>
   <a href="#leadership" class="text-sm font-semibold tracking-widest uppercase text-steel hover:text-white block py-2 no-underline" onclick="toggleMenu()">Leadership</a>
   <a href="#contact" class="text-sm font-semibold tracking-widest uppercase bg-blue text-white px-5 py-3 rounded-sm text-center block mt-2 no-underline" onclick="toggleMenu()">Contact Us</a>
 </div>
-
+ 
 <!-- HERO -->
 <section class="relative min-h-screen flex items-center overflow-hidden">
   <div class="hero-bg absolute inset-0"></div>
   <div class="grid-overlay absolute inset-0"></div>
-  <!-- bottom accent line -->
   <div class="absolute bottom-0 left-0 right-0 h-[3px]" style="background: linear-gradient(90deg, transparent, #1a6fc4, #4fb3e8, #c9a84c, transparent)"></div>
-
   <div class="relative z-10 px-[5%] pt-[120px] pb-20 max-w-[900px] w-full">
     <div class="animate-fade-up-1 inline-flex items-center gap-2.5 mb-7">
       <div class="w-10 h-0.5 bg-gold"></div>
@@ -84,8 +83,6 @@
       <a href="#contact" class="rounded-lg inline-flex items-center gap-2 bg-transparent text-white px-8 py-3.5 rounded-sm border border-white/25 text-[13px] font-semibold tracking-[0.1em] uppercase no-underline hover:border-sky hover:text-sky transition-all">Get In Touch →</a>
     </div>
   </div>
-
-  <!-- Stats -->
   <div class="animate-fade-up-5 absolute right-[5%] bottom-20 z-10 border border-white/10 rounded overflow-hidden backdrop-blur-md bg-navy/60 hidden sm:flex flex-col">
     <div class="px-7 py-5 border-b border-white/[0.08] text-center">
       <div class="font-condensed text-[36px] font-bold text-gold-light leading-none mb-1">20+</div>
@@ -100,9 +97,7 @@
       <div class="text-[10px] font-normal tracking-[0.2em] uppercase text-gray-mid">Est. Dubai, UAE</div>
     </div>
   </div>
-
-  <!-- Mobile stats row -->
-  <div class="absolute bottom-3  left-[5%] right-[5%] flex gap-3 sm:hidden z-10">
+  <div class="absolute bottom-3 left-[5%] right-[5%] flex gap-3 sm:hidden z-10">
     <div class="flex-1 bg-navy/70 backdrop-blur-sm border border-white/10 rounded p-3 text-center">
       <div class="font-condensed text-2xl font-bold text-gold-light">20+</div>
       <div class="text-[9px] tracking-widest uppercase text-gray-mid">Yrs Exp.</div>
@@ -117,7 +112,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ABOUT -->
 <section id="about" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-[1300px] mx-auto">
@@ -136,10 +131,7 @@
       <p class="text-base leading-[1.85] text-steel mb-10">
         Our approach combines rigorous compliance with local authority regulations, an unwavering commitment to safety and quality, and on-time delivery aligned with project programs and consultant directives.
       </p>
-
-    <!-- About us Info -->
       <div class="grid grid-cols-2 gap-px bg-white/[0.06] rounded overflow-hidden">
-     
         <div class="bg-white/[0.03] p-5">
           <div class="text-[10px] font-semibold tracking-[0.25em] uppercase text-gray-mid mb-1.5">Legal Type</div>
           <div class="text-[15px] font-semibold text-white">LLC (Single Owner)</div>
@@ -158,7 +150,6 @@
         </div>
       </div>
     </div>
-
     <div class="relative h-[360px] sm:h-[440px] lg:h-[500px]">
       <div class="about-img-main absolute top-0 left-0 w-4/5 h-4/5 rounded"></div>
       <div class="about-img-accent absolute bottom-0 right-0 w-[55%] h-[55%] rounded border-4 border-navy"></div>
@@ -169,7 +160,159 @@
     </div>
   </div>
 </section>
+ 
+<!-- ═══════════════════════════════════════════════
+     VISION, AIMS & VALUES  (NEW SECTION)
+═══════════════════════════════════════════════ -->
+<section id="vision" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy-mid relative overflow-hidden">
+  <!-- decorative rings -->
+  <div class="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(26,111,196,0.08) 0%, transparent 65%)"></div>
+  <div class="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 65%)"></div>
+ 
+  <div class="max-w-[1300px] mx-auto relative z-10">
+ 
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2.5 mb-4">
+        <div class="w-8 h-0.5 bg-gold"></div>
+        <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Our Foundation</span>
+        <div class="w-8 h-0.5 bg-gold"></div>
+      </div>
+      <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Vision, Aims &amp; Values</h2>
+    </div>
+ 
+    <!-- Aims & Message — full-width banner -->
+    <div class="rounded-md overflow-hidden mb-10" style="background: linear-gradient(135deg, rgba(26,111,196,0.18) 0%, rgba(10,22,40,0.9) 100%); border: 1px solid rgba(79,179,232,0.2)">
+      <div class="grid grid-cols-1 lg:grid-cols-5">
+        <!-- accent column -->
+        <div class="lg:col-span-2 relative min-h-[220px] lg:min-h-0 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="construction" class="absolute inset-0 w-full h-full object-cover opacity-40">
+          <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 0%, rgba(17,34,68,0.95) 100%)"></div>
+          <div class="relative z-10 flex flex-col justify-center h-full p-10">
+            <div class="font-condensed text-[64px] font-extrabold leading-none text-white/10 select-none">AIMS</div>
+            <div class="font-condensed text-[28px] font-bold uppercase text-white leading-tight mt-2">Our Aims<br>&amp; Message</div>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="lg:col-span-3 p-10 flex flex-col justify-center">
+          <p class="text-[15px] leading-[1.85] text-steel">
+            To practice contracting activity in accordance with all laws and authority procedures of local governments, with full commitment to safety and health instructions for construction sites, and observing quality and control to implement facilities that conform to project specifications — in accordance with municipal and competent authority instructions — till delivering projects on time as per project programs, aligned with consultants' and owners' directives regarding performance quality and efficiency of works.
+          </p>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Vision + Mission cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+      <!-- Vision -->
+      <div class="vision-card rounded-md p-10 border border-white/[0.08]" style="background: linear-gradient(135deg, rgba(10,22,40,0.9), rgba(17,34,68,0.7))">
+        <div class="w-[52px] h-[52px] rounded-full flex items-center justify-center mb-6" style="background: linear-gradient(135deg, #1a6fc4, #4fb3e8)">
+          <svg class="w-6 h-6 fill-none stroke-white" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <div class="inline-flex items-center gap-2 mb-3">
+          <div class="w-6 h-0.5 bg-sky"></div>
+          <span class="text-[10px] font-semibold tracking-[0.25em] uppercase text-sky">Vision</span>
+        </div>
+        <h3 class="font-condensed text-[26px] font-bold uppercase mb-4 text-white">To Be the UAE's Most Trusted Contractor</h3>
+        <p class="text-[14px] leading-[1.8] text-steel">
+          To be recognized as a leading, reliable, and innovative contracting company in the UAE — setting the benchmark for construction quality, regulatory compliance, and client satisfaction across every project we undertake.
+        </p>
+      </div>
+      <!-- Mission -->
+      <div class="vision-card rounded-md p-10 border border-white/[0.08]" style="background: linear-gradient(135deg, rgba(10,22,40,0.9), rgba(17,34,68,0.7))">
+        <div class="w-[52px] h-[52px] rounded-full flex items-center justify-center mb-6" style="background: linear-gradient(135deg, #c9a84c, #e8c96b)">
+          <svg class="w-6 h-6 fill-none stroke-white" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="inline-flex items-center gap-2 mb-3">
+          <div class="w-6 h-0.5 bg-gold"></div>
+          <span class="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold">Mission</span>
+        </div>
+        <h3 class="font-condensed text-[26px] font-bold uppercase mb-4 text-white">Deliver Excellence from Ground to Handover</h3>
+        <p class="text-[14px] leading-[1.8] text-steel">
+          To deliver fully integrated construction solutions — from excavation to completion certificate — through disciplined project management, skilled workforce, and an unwavering commitment to safety, quality, and on-schedule delivery.
+        </p>
+      </div>
+    </div>
+ <!-- Core Values grid -->
+<div>
+  <div class="text-center mb-8">
+    <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gray-mid">Core Values</span>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
 
+    <!-- Quality -->
+    <div class="value-pill rounded-md p-5 text-center cursor-default">
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="m9 8 2 2 4-4"/>
+        </svg>
+      </div>
+      <div class="font-condensed text-[15px] font-bold uppercase tracking-[0.06em] text-white mb-1">Quality</div>
+      <div class="text-[11px] text-gray-mid leading-[1.4]">Uncompromising standards at every phase</div>
+    </div>
+
+    <!-- Safety -->
+    <div class="value-pill rounded-md p-5 text-center cursor-default">
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
+        </svg>
+      </div>
+      <div class="font-condensed text-[15px] font-bold uppercase tracking-[0.06em] text-white mb-1">Safety</div>
+      <div class="text-[11px] text-gray-mid leading-[1.4]">HSE compliance on every site, every day</div>
+    </div>
+
+    <!-- Integrity -->
+    <div class="value-pill rounded-md p-5 text-center cursor-default">
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+      <div class="font-condensed text-[15px] font-bold uppercase tracking-[0.06em] text-white mb-1">Integrity</div>
+      <div class="text-[11px] text-gray-mid leading-[1.4]">Transparent dealings with every stakeholder</div>
+    </div>
+
+    <!-- Timeliness -->
+    <div class="value-pill rounded-md p-5 text-center cursor-default">
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+      </div>
+      <div class="font-condensed text-[15px] font-bold uppercase tracking-[0.06em] text-white mb-1">Timeliness</div>
+      <div class="text-[11px] text-gray-mid leading-[1.4]">Projects delivered on schedule, every time</div>
+    </div>
+
+    <!-- Innovation -->
+    <div class="value-pill rounded-md p-5 text-center cursor-default">
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17H8v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/>
+        </svg>
+      </div>
+      <div class="font-condensed text-[15px] font-bold uppercase tracking-[0.06em] text-white mb-1">Innovation</div>
+      <div class="text-[11px] text-gray-mid leading-[1.4]">Modern methods and engineering solutions</div>
+    </div>
+
+    <!-- Compliance -->
+    <div class="value-pill rounded-md p-5 text-center cursor-default">
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+        </svg>
+      </div>
+      <div class="font-condensed text-[15px] font-bold uppercase tracking-[0.06em] text-white mb-1">Compliance</div>
+      <div class="text-[11px] text-gray-mid leading-[1.4]">Full adherence to Dubai Municipality rules</div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+</section>
+ 
 <!-- SERVICES -->
 <section id="services" class="scroll-mt-[72px] clip-services bg-navy-mid px-[5%] py-[160px] -my-10">
   <div class="max-w-[1300px] mx-auto">
@@ -182,19 +325,15 @@
         <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Our Services</h2>
       </div>
     </div>
-
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.04] rounded-md overflow-hidden">
-
-      <!-- Card -->
       <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
         <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-        <div class="w-13 h-13 bg-blue/15 rounded-md flex items-center justify-center mb-6 w-[52px] h-[52px]">
+        <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
           <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 21h18M3 18h18M6 18V9m4 9V9m4 9V9m4 9V9M3 9l9-6 9 6"/></svg>
         </div>
         <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">General Contracting</div>
         <p class="text-sm leading-[1.7] text-gray-mid">Full-scope main contractor services for residential, commercial, and mixed-use projects — managing all trades from ground-breaking to handover.</p>
       </div>
-
       <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
         <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
@@ -203,7 +342,6 @@
         <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Residential Buildings</div>
         <p class="text-sm leading-[1.7] text-gray-mid">Construction of villas, townhouses, and multi-storey apartment buildings for private developers and government-linked clients across the UAE.</p>
       </div>
-
       <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
         <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
@@ -212,16 +350,14 @@
         <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Commercial Projects</div>
         <p class="text-sm leading-[1.7] text-gray-mid">Hotel apartments, retail complexes, factories, and commercial facilities — executed with precision engineering and timely delivery.</p>
       </div>
-
       <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
         <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
           <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
-        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Resort & Hospitality</div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Resort &amp; Hospitality</div>
         <p class="text-sm leading-[1.7] text-gray-mid">Specialized construction for luxury resorts, hotels, and hospitality facilities — balancing aesthetics with structural integrity.</p>
       </div>
-
       <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
         <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
@@ -230,23 +366,23 @@
         <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">Site Supervision</div>
         <p class="text-sm leading-[1.7] text-gray-mid">Expert on-site management from excavation to final inspection, ensuring compliance with Dubai Municipality and authority standards.</p>
       </div>
-
-    <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
-      <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-      <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
-        <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24">
-          <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622C17.176 19.29 21 14.591 21 9a12.02 12.02 0 00-.382-3.016z"/>
-        </svg>
+      <div class="group bg-navy/80 p-10 relative overflow-hidden hover:bg-blue/[0.12] transition-colors duration-300">
+        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        <div class="w-[52px] h-[52px] bg-blue/15 rounded-md flex items-center justify-center mb-6">
+          <svg class="w-[26px] h-[26px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622C17.176 19.29 21 14.591 21 9a12.02 12.02 0 00-.382-3.016z"/>
+          </svg>
+        </div>
+        <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">HSE &amp; Quality Control</div>
+        <p class="text-sm leading-[1.7] text-gray-mid">Comprehensive health, safety, and quality assurance management — ensuring every phase meets regulatory standards and client specifications.</p>
       </div>
-      <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-3 text-white">HSE & Quality Control</div>
-      <p class="text-sm leading-[1.7] text-gray-mid">Comprehensive health, safety, and quality assurance management — ensuring every phase meets regulatory standards and client specifications.</p>
-    </div>
-
     </div>
   </div>
 </section>
-
-<!-- PROJECTS -->
+ 
+<!-- ═══════════════════════════════════════════════
+     PROJECTS SLIDESHOW  (REDESIGNED)
+═══════════════════════════════════════════════ -->
 <section id="projects" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy">
   <div class="max-w-[1300px] mx-auto">
     <div class="mb-14">
@@ -256,153 +392,470 @@
       </div>
       <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Projects by Our Director</h2>
       <p class="mt-4 text-[15px] text-gray-mid max-w-[620px] leading-[1.7]">
-        Below are key projects managed by Eng. Ahmed Nada across UAE and Egypt — spanning luxury resorts, residential towers, commercial buildings, and more.
+        Key projects managed by Eng. Ahmed Nada across UAE and Egypt — spanning luxury resorts, residential towers, commercial buildings, and more.
       </p>
-
-      <div class="flex gap-1 mt-8 bg-white/5 rounded p-1 w-fit flex-wrap">
-        <button class="tab-btn active px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all bg-blue text-white" onclick="filterProjects('all', this)">All</button>
-        <button class="tab-btn px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all text-gray-mid hover:text-white" onclick="filterProjects('uae', this)">UAE</button>
-        <button class="tab-btn px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all text-gray-mid hover:text-white" onclick="filterProjects('ksa', this)">KSA</button>
-        <button class="tab-btn px-5 py-2 text-xs font-semibold tracking-[0.12em] uppercase cursor-pointer rounded-sm transition-all text-gray-mid hover:text-white" onclick="filterProjects('egypt', this)">Egypt</button>
-      </div>
     </div>
-
-    <div id="projectsList" class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.04] rounded-md overflow-hidden">
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">01</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Royal Miramar Resort — Al Fujairah</div>
-          <div class="text-xs text-gray-mid">316-Room Luxury Resort · Al Fujairah, UAE</div>
+ 
+    <!-- Slideshow container -->
+    <div class="relative rounded-md overflow-hidden border border-white/[0.08]" style="min-height: 520px;">
+ 
+      <!-- Slide 1 -->
+      <div class="slide active" data-region="uae">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=900&q=80" alt="Royal Miramar Resort" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Resort</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">01</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">Royal Miramar Resort</div>
+            <div class="text-sky text-sm font-semibold mb-5">Al Fujairah, UAE</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">A prestigious 316-room luxury resort development in Al Fujairah, UAE. This landmark hospitality project demanded meticulous coordination of structural, MEP, and finishing trades to deliver a world-class guest experience.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">316</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Rooms</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">UAE</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Location</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">Luxury</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Category</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Resort</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">02</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Damas Hotel — Dibba Al Fujairah</div>
-          <div class="text-xs text-gray-mid">B+G+9 Floors · Fujairah, UAE</div>
+ 
+      <!-- Slide 2 -->
+      <div class="slide" data-region="uae">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80" alt="Damas Hotel" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Hotel</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">02</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">Damas Hotel</div>
+            <div class="text-sky text-sm font-semibold mb-5">Dibba Al Fujairah, UAE</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">A B+G+9 floor hotel development in Dibba Al Fujairah — delivering a modern hospitality structure with full structural, MEP, and fit-out works completed to municipality standards.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">B+G+9</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Floors</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">Fujairah</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Emirates</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Hotel</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">03</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">2 Residential Buildings — Muwaileh</div>
-          <div class="text-xs text-gray-mid">B+G+7 Floors · Sharjah, UAE</div>
+ 
+      <!-- Slide 3 -->
+      <div class="slide" data-region="uae">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="Residential Muwaileh" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Residential</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">03</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">2 Residential Buildings</div>
+            <div class="text-sky text-sm font-semibold mb-5">Muwaileh, Sharjah, UAE</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">Twin B+G+7 residential towers in Muwaileh, Sharjah — a dual-building residential project executed concurrently with coordinated scheduling to optimize delivery timelines for the developer.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">2</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Buildings</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">B+G+7</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Floors</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">04</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Residential Building — Al Khan</div>
-          <div class="text-xs text-gray-mid">G+5P+15 Floors · Sharjah, UAE</div>
+ 
+      <!-- Slide 4 -->
+      <div class="slide" data-region="uae">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80" alt="Palm Jumeirah" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Hotel</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">05</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">Hotel Apartment</div>
+            <div class="text-sky text-sm font-semibold mb-5">Palm Jumeirah, Dubai, UAE</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">A B+G+8 hotel apartment development on the iconic Palm Jumeirah — one of Dubai's most prestigious addresses, delivered with premium finishing standards befitting its landmark location.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">B+G+8</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Floors</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">Palm</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Jumeirah</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">05</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Hotel Apartment — Palm Jumeirah</div>
-          <div class="text-xs text-gray-mid">B+G+8 Floors · Dubai, UAE</div>
+ 
+      <!-- Slide 5 -->
+      <div class="slide" data-region="uae">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=900&q=80" alt="Meydan" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Residential</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">10</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">11 Residential Buildings</div>
+            <div class="text-sky text-sm font-semibold mb-5">Meydan One, Nadd Al Sheba, Dubai</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">An ambitious 11-building residential complex ranging from 2B+G+7 to 2B+G+10 floors — a major multi-building development in the prestigious Meydan One community, managed with advanced programme coordination.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">11</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Buildings</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">Meydan</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Community</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Hotel</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">06</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">2 Residential Buildings — Nadd Al Hamar</div>
-          <div class="text-xs text-gray-mid">B+G+7 Floors · Dubai, UAE</div>
+ 
+      <!-- Slide 6 -->
+      <div class="slide" data-region="uae">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=900&q=80" alt="Jumeirah Golf Estates" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Mixed Use</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">08</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">95 Townhouses + Retail Mall</div>
+            <div class="text-sky text-sm font-semibold mb-5">Jumeirah Golf Estates, Dubai, UAE</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">A landmark mixed-use development comprising 95 luxury townhouses alongside a retail mall at Jumeirah Golf Estates — combining residential excellence with vibrant community retail in one of Dubai's premier gated communities.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">95</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Townhouses</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">+Mall</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Retail</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">07</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Gold Factory — Jebel Ali</div>
-          <div class="text-xs text-gray-mid">G+2 Floors · Dubai, UAE</div>
+ 
+      <!-- Slide 7 -->
+      <div class="slide" data-region="egypt">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=900&q=80" alt="Al Loloaa Hospital" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Healthcare</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">12</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">Al Loloaa Hospital</div>
+            <div class="text-sky text-sm font-semibold mb-5">Cairo–Alexandria Desert Road, Egypt</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">A G+Mezzanine+5 floor hospital complex on the Cairo–Alexandria Desert Road — a healthcare facility demanding the highest standards of structural integrity, MEP coordination, and specialist medical-grade fit-out.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">G+M+5</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Floors</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">Egypt</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Location</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Industrial</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">08</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">95 Townhouses + Retail Mall</div>
-          <div class="text-xs text-gray-mid">Jumeirah Golf Estates · Dubai, UAE</div>
+ 
+      <!-- Slide 8 -->
+      <div class="slide" data-region="egypt">
+        <div class="grid grid-cols-1 lg:grid-cols-2" style="min-height:520px">
+          <div class="relative overflow-hidden" style="min-height:280px">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80" alt="Jaz Belvedere Resort" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(90deg, transparent 60%, rgba(10,22,40,0.95) 100%), linear-gradient(0deg, rgba(10,22,40,0.5), transparent)"></div>
+            <div class="absolute top-5 left-5">
+              <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 rounded-sm bg-blue text-white">Resort</span>
+            </div>
+          </div>
+          <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
+            <span class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">13</span>
+            <div class="font-condensed text-[30px] font-bold uppercase text-white leading-tight mb-2">Jaz Belvedere Resort</div>
+            <div class="text-sky text-sm font-semibold mb-5">Sharm El Sheikh, South Sinai, Egypt</div>
+            <p class="text-[14px] leading-[1.8] text-steel mb-6">A luxury resort development in Sharm El Sheikh under Travco Group — one of Egypt's leading hospitality groups. This high-profile project reflects our capability in delivering premium resort construction to international standards.</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">Travco</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Client</div>
+              </div>
+              <div class="text-center px-4 py-3 rounded bg-white/[0.04] border border-white/[0.07]">
+                <div class="font-condensed text-xl font-bold text-gold-light">Luxury</div>
+                <div class="text-[9px] tracking-widest uppercase text-gray-mid">Category</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Mixed Use</span>
       </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">09</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Residential Building — Studio City</div>
-          <div class="text-xs text-gray-mid">B+G+8 Floors · Dubai, UAE</div>
-        </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
-      </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="uae">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">10</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">11 Residential Buildings — Meydan One</div>
-          <div class="text-xs text-gray-mid">2B+G+7 to 10 Floors · Nadd Al Sheba, Dubai</div>
-        </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
-      </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="ksa">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">11</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Residential Building — Jeddah</div>
-          <div class="text-xs text-gray-mid">G+4 Floors + Roof · Jeddah, Saudi Arabia</div>
-        </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Residential</span>
-      </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="egypt">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">12</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Al Loloaa Hospital</div>
-          <div class="text-xs text-gray-mid">G+Mezzanine+5 Floors · Cairo-Alexandria Desert Road</div>
-        </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Healthcare</span>
-      </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="egypt">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">13</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Jaz Belvedere Resort — Sharm El Sheikh</div>
-          <div class="text-xs text-gray-mid">Under Travco Group · South Sinai, Egypt</div>
-        </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Resort</span>
-      </div>
-
-      <div class="project-row bg-navy/60 px-7 py-5 flex items-center gap-5 hover:bg-blue/[0.08] transition-colors" data-region="egypt">
-        <span class="font-condensed text-[13px] font-bold text-blue-light opacity-70 min-w-[28px]">14</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-white mb-0.5 truncate">Samaya & Lamaya Resorts</div>
-          <div class="text-xs text-gray-mid">Under Travco Group · Marsa Alam, Egypt</div>
-        </div>
-        <span class="text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded-sm bg-blue/15 text-sky whitespace-nowrap">Resort</span>
-      </div>
-
+ 
+      <!-- NAV OVERLAY -->
+      <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center border border-white/20 bg-navy/70 backdrop-blur-sm text-white hover:bg-blue hover:border-blue transition-all">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center border border-white/20 bg-navy/70 backdrop-blur-sm text-white hover:bg-blue hover:border-blue transition-all">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+ 
+    <!-- Dots + counter -->
+    <div class="flex items-center justify-between mt-6">
+      <div id="slide-dots" class="flex gap-2"></div>
+      <div id="slide-counter" class="text-[12px] font-semibold tracking-[0.15em] text-gray-mid"></div>
     </div>
   </div>
 </section>
+ <!-- ONGOING PROJECTS -->
+<section id="ongoing" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy-mid relative overflow-hidden">
+  <div class="absolute top-0 left-0 right-0 h-[3px]" style="background: linear-gradient(90deg, transparent, #c9a84c, #4fb3e8, transparent)"></div>
+  <div class="max-w-[1300px] mx-auto">
+    <div class="mb-14">
+      <div class="inline-flex items-center gap-2.5 mb-4">
+        <div class="w-8 h-0.5 bg-gold"></div>
+        <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Live Projects</span>
+      </div>
+      <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Ongoing Projects</h2>
+      <p class="mt-4 text-[15px] text-gray-mid max-w-[600px] leading-[1.7]">
+        Projects currently under active construction by Swift Atlantis Contracting across the UAE.
+      </p>
+    </div>
 
+    <!-- Carousel -->
+    <div class="relative">
+      <div class="overflow-hidden rounded-md" id="op-outer">
+        <div class="flex transition-transform duration-[420ms] ease-[cubic-bezier(.4,0,.2,1)]" id="op-track">
+
+          <!-- Card A -->
+          <div class="op-card group flex-none rounded-md overflow-hidden border border-white/[0.08] bg-navy/60 hover:border-blue/40 transition-all duration-300 hover:-translate-y-1 flex flex-col mr-5">
+            <div class="relative h-[200px] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Residential Villa Complex" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0" style="background: linear-gradient(0deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.1) 60%)"></div>
+              <div class="absolute top-3 left-3">
+                <span class="text-[9px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-blue text-white">In Progress</span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span class="text-[9px] font-bold tracking-[0.1em] uppercase px-2.5 py-1 rounded-sm bg-black/50 backdrop-blur-sm text-gray-mid">Residential</span>
+              </div>
+              <div class="absolute bottom-3 left-3">
+                <span class="font-condensed text-[11px] font-bold tracking-[0.1em] uppercase text-white/50">PROJ–2024–01</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-condensed text-[20px] font-bold text-white leading-tight mb-1">Residential Villa Complex</h3>
+              <p class="text-xs text-sky mb-3">Al Barsha South, Dubai, UAE</p>
+              <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-steel mt-auto">
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>G+1 + Roof Terrace</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Started Q1 2024</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gold fill-none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Target Q4 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card B -->
+          <div class="op-card group flex-none rounded-md overflow-hidden border border-white/[0.08] bg-navy/60 hover:border-gold/40 transition-all duration-300 hover:-translate-y-1 flex flex-col mr-5">
+            <div class="relative h-[200px] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80" alt="Commercial Office Building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0" style="background: linear-gradient(0deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.1) 60%)"></div>
+              <div class="absolute top-3 left-3">
+                <span class="text-[9px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-gold text-navy">Structural Phase</span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span class="text-[9px] font-bold tracking-[0.1em] uppercase px-2.5 py-1 rounded-sm bg-black/50 backdrop-blur-sm text-gray-mid">Commercial</span>
+              </div>
+              <div class="absolute bottom-3 left-3">
+                <span class="font-condensed text-[11px] font-bold tracking-[0.1em] uppercase text-white/50">PROJ–2024–02</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-condensed text-[20px] font-bold text-white leading-tight mb-1">Commercial Office Building</h3>
+              <p class="text-xs text-sky mb-3">Business Bay, Dubai, UAE</p>
+              <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-steel mt-auto">
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>B+G+12 Floors</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Started Q3 2024</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gold fill-none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Target Q2 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card C -->
+          <div class="op-card group flex-none rounded-md overflow-hidden border border-white/[0.08] bg-navy/60 hover:border-sky/40 transition-all duration-300 hover:-translate-y-1 flex flex-col mr-5">
+            <div class="relative h-[200px] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=700&q=80" alt="G+1 Residential Compound" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0" style="background: linear-gradient(0deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.1) 60%)"></div>
+              <div class="absolute top-3 left-3">
+                <span class="text-[9px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-sky text-navy">Finishing Phase</span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span class="text-[9px] font-bold tracking-[0.1em] uppercase px-2.5 py-1 rounded-sm bg-black/50 backdrop-blur-sm text-gray-mid">Residential</span>
+              </div>
+              <div class="absolute bottom-3 left-3">
+                <span class="font-condensed text-[11px] font-bold tracking-[0.1em] uppercase text-white/50">PROJ–2025–01</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-condensed text-[20px] font-bold text-white leading-tight mb-1">G+1 Residential Compound</h3>
+              <p class="text-xs text-sky mb-3">Al Quoz, Dubai, UAE</p>
+              <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-steel mt-auto">
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>G+1 + Landscaped Podium</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Started Q4 2023</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gold fill-none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Target Q3 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card D -->
+          <div class="op-card group flex-none rounded-md overflow-hidden border border-white/[0.08] bg-navy/60 hover:border-blue/40 transition-all duration-300 hover:-translate-y-1 flex flex-col mr-5">
+            <div class="relative h-[200px] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=700&q=80" alt="Retail + Residential Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0" style="background: linear-gradient(0deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.1) 60%)"></div>
+              <div class="absolute top-3 left-3">
+                <span class="text-[9px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-blue text-white">In Progress</span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span class="text-[9px] font-bold tracking-[0.1em] uppercase px-2.5 py-1 rounded-sm bg-black/50 backdrop-blur-sm text-gray-mid">Mixed Use</span>
+              </div>
+              <div class="absolute bottom-3 left-3">
+                <span class="font-condensed text-[11px] font-bold tracking-[0.1em] uppercase text-white/50">PROJ–2025–02</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-condensed text-[20px] font-bold text-white leading-tight mb-1">Retail + Residential Development</h3>
+              <p class="text-xs text-sky mb-3">Jumeirah Village Circle, Dubai, UAE</p>
+              <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-steel mt-auto">
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>B+G+6 Floors</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Started Q1 2025</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gold fill-none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Target Q1 2027</span>
+              </div>
+            </div>
+          </div>
+
+<!-- Card E -->
+ 
+          <!-- Card D -->
+          <div class="op-card group flex-none rounded-md overflow-hidden border border-white/[0.08] bg-navy/60 hover:border-blue/40 transition-all duration-300 hover:-translate-y-1 flex flex-col mr-5">
+            <div class="relative h-[200px] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=700&q=80" alt="Retail + Residential Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0" style="background: linear-gradient(0deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.1) 60%)"></div>
+              <div class="absolute top-3 left-3">
+                <span class="text-[9px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-blue text-white">In Progress</span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span class="text-[9px] font-bold tracking-[0.1em] uppercase px-2.5 py-1 rounded-sm bg-black/50 backdrop-blur-sm text-gray-mid">Mixed Use</span>
+              </div>
+              <div class="absolute bottom-3 left-3">
+                <span class="font-condensed text-[11px] font-bold tracking-[0.1em] uppercase text-white/50">PROJ–2025–02</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-condensed text-[20px] font-bold text-white leading-tight mb-1">Retail + Residential Development</h3>
+              <p class="text-xs text-sky mb-3">Jumeirah Village Circle, Dubai, UAE</p>
+              <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-steel mt-auto">
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>B+G+6 Floors</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Started Q1 2025</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gold fill-none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Target Q1 2027</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD F -->
+           
+          <!-- Card D -->
+          <div class="op-card group flex-none rounded-md overflow-hidden border border-white/[0.08] bg-navy/60 hover:border-blue/40 transition-all duration-300 hover:-translate-y-1 flex flex-col mr-5">
+            <div class="relative h-[200px] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=700&q=80" alt="Retail + Residential Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0" style="background: linear-gradient(0deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.1) 60%)"></div>
+              <div class="absolute top-3 left-3">
+                <span class="text-[9px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-blue text-white">In Progress</span>
+              </div>
+              <div class="absolute top-3 right-3">
+                <span class="text-[9px] font-bold tracking-[0.1em] uppercase px-2.5 py-1 rounded-sm bg-black/50 backdrop-blur-sm text-gray-mid">Mixed Use</span>
+              </div>
+              <div class="absolute bottom-3 left-3">
+                <span class="font-condensed text-[11px] font-bold tracking-[0.1em] uppercase text-white/50">PROJ–2025–02</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-condensed text-[20px] font-bold text-white leading-tight mb-1">Retail + Residential Development</h3>
+              <p class="text-xs text-sky mb-3">Jumeirah Village Circle, Dubai, UAE</p>
+              <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-steel mt-auto">
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>B+G+6 Floors</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gray-mid fill-none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Started Q1 2025</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3 h-3 stroke-gold fill-none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Target Q1 2027</span>
+              </div>
+            </div>
+          </div>  
+
+        </div>
+      </div>
+
+      <!-- Controls: dots left, counter + buttons right -->
+      <div class="flex items-center justify-between mt-6">
+        <div id="op-dots" class="flex gap-2 items-center"></div>
+        <div class="flex items-center gap-4">
+          <div id="op-counter" class="text-[12px] font-semibold tracking-[0.15em] text-gray-mid"></div>
+          <div class="flex gap-2">
+            <button id="op-prev" aria-label="Previous project" class="w-11 h-11 rounded-full flex items-center justify-center border border-white/20 bg-navy/70 backdrop-blur-sm text-white hover:bg-blue hover:border-blue transition-all">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button id="op-next" aria-label="Next project" class="w-11 h-11 rounded-full flex items-center justify-center border border-white/20 bg-navy/70 backdrop-blur-sm text-white hover:bg-blue hover:border-blue transition-all">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <!-- LEADERSHIP -->
-<section id="leadership" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy-mid">
+<section id="leadership" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy">
   <div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-    <!-- Card -->
     <div class="bg-white/[0.03] border border-white/[0.08] rounded-md overflow-hidden">
       <div class="p-10 text-center relative" style="background: linear-gradient(135deg, #0a1628, rgba(26,111,196,0.3))">
         <div class="w-[100px] h-[100px] rounded-full bg-blue border-[3px] border-white/15 mx-auto mb-4 flex items-center justify-center font-condensed text-[36px] font-bold text-white">AN</div>
@@ -412,11 +865,9 @@
       <div class="px-10 py-8">
         <div class="flex items-start gap-3.5 py-3 border-b border-white/[0.06] text-sm"><span class="text-gray-mid text-xs font-semibold tracking-[0.1em] uppercase min-w-[100px]">Education</span><span class="text-white">B.Sc. Architectural Engineering, Mansoura University (2002)</span></div>
         <div class="flex items-center gap-3.5 py-3 border-b border-white/[0.06] text-sm"><span class="text-gray-mid text-xs font-semibold tracking-[0.1em] uppercase min-w-[100px]">Experience</span><span class="text-white">20+ Years in Construction</span></div>
-        <div class="flex items-center gap-3.5 py-3 border-b border-white/[0.06] text-sm"><span class="text-gray-mid text-xs font-semibold tracking-[0.1em] uppercase min-w-[100px]">Regions</span><span class="text-white">UAE & Egypt</span></div>
+        <div class="flex items-center gap-3.5 py-3 border-b border-white/[0.06] text-sm"><span class="text-gray-mid text-xs font-semibold tracking-[0.1em] uppercase min-w-[100px]">Regions</span><span class="text-white">UAE &amp; Egypt</span></div>
       </div>
     </div>
-
-    <!-- Text -->
     <div>
       <div class="inline-flex items-center gap-2.5 mb-4">
         <div class="w-8 h-0.5 bg-gold"></div>
@@ -442,27 +893,24 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CREDENTIALS -->
-<section id="credentials" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy">
+<section id="credentials" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy-mid">
   <div class="max-w-[1300px] mx-auto">
     <div class="inline-flex items-center gap-2.5 mb-4">
       <div class="w-8 h-0.5 bg-gold"></div>
       <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Certifications</span>
     </div>
-    <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Licensed & Certified</h2>
-
+    <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none" style="font-size: clamp(36px, 5vw, 58px)">Licensed &amp; Certified</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
-
       <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
           <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
         <div class="font-condensed text-[18px] font-bold uppercase tracking-[0.04em] mb-2 text-white">Commercial License</div>
-        <div class="text-xs text-gray-mid leading-[1.5] mb-2">Issued by Dubai Dept. of Economy & Tourism</div>
+        <div class="text-xs text-gray-mid leading-[1.5] mb-2">Issued by Dubai Dept. of Economy &amp; Tourism</div>
         <div class="text-[11px] text-sky font-semibold opacity-80">No. 1080914</div>
       </div>
-
       <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
           <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -471,16 +919,14 @@
         <div class="text-xs text-gray-mid leading-[1.5] mb-2">Registered with Dubai Economic Development</div>
         <div class="text-[11px] text-sky font-semibold opacity-80">Reg. No. 1762575</div>
       </div>
-
       <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
           <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
         </div>
         <div class="font-condensed text-[18px] font-bold uppercase tracking-[0.04em] mb-2 text-white">Chamber Member</div>
-        <div class="text-xs text-gray-mid leading-[1.5] mb-2">Dubai Chamber of Commerce & Industry</div>
+        <div class="text-xs text-gray-mid leading-[1.5] mb-2">Dubai Chamber of Commerce &amp; Industry</div>
         <div class="text-[11px] text-sky font-semibold opacity-80">Member No. 418548</div>
       </div>
-
       <div class="group bg-white/[0.03] border border-white/[0.07] rounded-md p-8 text-center hover:border-blue/40 hover:bg-blue/[0.06] hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-blue/15 rounded-full flex items-center justify-center mx-auto mb-5">
           <svg class="w-6 h-6 stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -492,33 +938,29 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
-<section id="contact" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy-mid relative overflow-hidden">
+<section id="contact" class="scroll-mt-[72px] py-24 md:py-[120px] px-[5%] bg-navy relative overflow-hidden">
   <div class="absolute -top-[200px] -right-[200px] w-[600px] h-[600px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(26,111,196,0.12) 0%, transparent 70%)"></div>
   <div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start relative z-10">
-
     <div>
       <div class="inline-flex items-center gap-2.5 mb-4">
         <div class="w-8 h-0.5 bg-gold"></div>
         <span class="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">Get in Touch</span>
       </div>
       <h2 class="font-condensed font-bold uppercase tracking-[0.02em] leading-none mb-6" style="font-size: clamp(36px, 5vw, 58px)">Let's Build<br>Together</h2>
-      <p class="text-base leading-[1.8] text-steel mb-10">
-        Ready to start your next construction project in Dubai or the UAE? Contact Swift Atlantis Contracting to discuss your requirements with our team.
-      </p>
-
-<div class="flex flex-col gap-y-3  rounded-md p-2">
-  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+      <p class="text-base leading-[1.8] text-steel mb-10">Ready to start your next construction project in Dubai or the UAE? Contact Swift Atlantis Contracting to discuss your requirements with our team.</p>
+      <div class="flex flex-col gap-y-3 rounded-md p-2">
+        <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
           <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
             <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
           <div>
             <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-mid mb-0.5">Office Address</div>
-            <div class="text-sm text-white">P.O Box: 60054 Dubai Office 901, Crystal Tower,Business Bay<br>Dubai, United Arab Emirates</div>
+            <div class="text-sm text-white">P.O Box: 60054 Dubai Office 901, Crystal Tower, Business Bay<br>Dubai, United Arab Emirates</div>
           </div>
         </div>
-  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+        <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
           <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
             <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
           </div>
@@ -527,7 +969,7 @@
             <div class="text-sm text-white">+971 52-1500177</div>
           </div>
         </div>
-  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+        <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
           <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
             <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
@@ -536,7 +978,7 @@
             <div class="text-sm text-white">ahmednada2swiftatlantis.ae</div>
           </div>
         </div>
-  <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
+        <div class="flex items-center gap-4 px-6 py-6 border border-white/[0.2] rounded-md hover:bg-white/[0.03] transition-colors">
           <div class="w-9 h-9 bg-blue/15 rounded flex items-center justify-center flex-shrink-0">
             <svg class="w-[18px] h-[18px] stroke-sky fill-none" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
           </div>
@@ -547,35 +989,29 @@
         </div>
       </div>
     </div>
-
-    <!-- Form -->
     <div class="bg-white/[0.03] border border-white/[0.07] rounded-md p-8 md:p-10">
       <div class="font-condensed text-[22px] font-bold uppercase tracking-[0.04em] mb-7 text-white">Send an Enquiry</div>
-
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <div>
           <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">First Name</label>
-          <input type="text" placeholder="John" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+          <input type="text" placeholder="John" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
         </div>
         <div>
           <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Last Name</label>
-          <input type="text" placeholder="Smith" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+          <input type="text" placeholder="Smith" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
         </div>
       </div>
-
       <div class="mb-4">
         <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Email Address</label>
-        <input type="email" placeholder="john@example.com" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+        <input type="email" placeholder="john@example.com" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
       </div>
-
       <div class="mb-4">
         <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Phone Number</label>
-        <input type="tel" placeholder="+971 XX XXX XXXX" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
+        <input type="tel" placeholder="+971 XX XXX XXXX" class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25">
       </div>
-
       <div class="mb-4">
         <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Project Type</label>
-        <select class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors appearance-none" style="background-color: rgba(255,255,255,0.05)">
+        <select class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-sm text-white outline-none focus:border-blue-light transition-colors appearance-none" style="background-color: rgba(255,255,255,0.05)">
           <option value="" style="background:#0a1628">Select project type...</option>
           <option style="background:#0a1628">Residential Building</option>
           <option style="background:#0a1628">Commercial Building</option>
@@ -585,17 +1021,15 @@
           <option style="background:#0a1628">Other</option>
         </select>
       </div>
-
       <div class="mb-4">
         <label class="block text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-mid mb-2">Message</label>
-        <textarea rows="4" placeholder="Tell us about your project — location, scope, timeline..." class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 font-barlow text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25 resize-y min-h-[120px]"></textarea>
+        <textarea rows="4" placeholder="Tell us about your project — location, scope, timeline..." class="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-sm text-white outline-none focus:border-blue-light transition-colors placeholder:text-white/25 resize-y min-h-[120px]"></textarea>
       </div>
-
-      <button class="w-full bg-blue text-white border-0 px-8 py-3.5 rounded-sm font-barlow text-[13px] font-semibold tracking-[0.12em] uppercase cursor-pointer hover:bg-blue-light transition-colors mt-2">Submit Enquiry →</button>
+      <button class="w-full bg-blue text-white border-0 px-8 py-3.5 rounded-sm text-[13px] font-semibold tracking-[0.12em] uppercase cursor-pointer hover:bg-blue-light transition-colors mt-2">Submit Enquiry →</button>
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer class="bg-black/40 border-t border-white/[0.06] py-10 px-[5%]">
   <div class="max-w-[1300px] mx-auto flex flex-col sm:flex-row items-center sm:items-center justify-between gap-4">
@@ -614,31 +1048,12 @@
     </div>
   </div>
 </footer>
-
+ 
 <script>
+  // ── NAV ──
   function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('open');
+    document.getElementById('mobile-menu').classList.toggle('open');
   }
-
-  function filterProjects(region, btn) {
-    document.querySelectorAll('.tab-btn').forEach(t => {
-      t.classList.remove('bg-blue', 'text-white');
-      t.classList.add('text-gray-mid');
-    });
-    btn.classList.add('bg-blue', 'text-white');
-    btn.classList.remove('text-gray-mid');
-
-    document.querySelectorAll('.project-row').forEach(row => {
-      if (region === 'all' || row.dataset.region === region) {
-        row.style.display = 'flex';
-      } else {
-        row.style.display = 'none';
-      }
-    });
-  }
-
-  // Close mobile menu when clicking outside
   document.addEventListener('click', function(e) {
     const menu = document.getElementById('mobile-menu');
     const hamburger = document.getElementById('hamburger');
@@ -646,6 +1061,125 @@
       menu.classList.remove('open');
     }
   });
+ 
+  // ── SLIDESHOW ──
+  const slides = document.querySelectorAll('.slide');
+  const dotsContainer = document.getElementById('slide-dots');
+  const counter = document.getElementById('slide-counter');
+  let current = 0;
+ 
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'w-2 h-2 rounded-full transition-all duration-300 ' + (i === 0 ? 'bg-blue w-5' : 'bg-white/20');
+    dot.onclick = () => goToSlide(i, i > current ? 'right' : 'left');
+    dotsContainer.appendChild(dot);
+  });
+ 
+  function updateDots() {
+    dotsContainer.querySelectorAll('button').forEach((dot, i) => {
+      dot.className = 'rounded-full transition-all duration-300 h-2 ' +
+        (i === current ? 'bg-blue w-5' : 'bg-white/20 w-2');
+    });
+    counter.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+  }
+ 
+  function goToSlide(n, dir = 'right') {
+    slides[current].classList.remove('active', 'anim-right', 'anim-left');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active', dir === 'right' ? 'anim-right' : 'anim-left');
+    updateDots();
+  }
+ 
+  function nextSlide() { goToSlide(current + 1, 'right'); }
+  function prevSlide() { goToSlide(current - 1, 'left'); }
+ 
+  // Auto-advance
+  let autoplay = setInterval(nextSlide, 6000);
+  document.querySelector('.slide').closest('.relative').addEventListener('mouseenter', () => clearInterval(autoplay));
+  document.querySelector('.slide').closest('.relative').addEventListener('mouseleave', () => { autoplay = setInterval(nextSlide, 6000); });
+ 
+  // Keyboard
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') nextSlide();
+    if (e.key === 'ArrowLeft') prevSlide();
+  });
+ 
+  updateDots();
+  
+  // ── ONGOING PROJECTS CAROUSEL ──
+(function () {
+  const track    = document.getElementById('op-track');
+  const dotsEl   = document.getElementById('op-dots');
+  const counterEl = document.getElementById('op-counter');
+  const cards    = Array.from(document.querySelectorAll('.op-card'));
+  let cur = 0;
+
+  function visibleCount() {
+    const w = document.getElementById('op-outer').offsetWidth;
+    if (w < 480)  return 1;
+    if (w < 768)  return 2;
+    if (w < 1024) return 3;
+    return 4;
+  }
+
+  function maxIndex() {
+    return Math.max(0, cards.length - visibleCount());
+  }
+
+  function setCardWidths() {
+    const vis = visibleCount();
+    const gap = 20;
+    const outerW = document.getElementById('op-outer').offsetWidth;
+    const cardW  = (outerW - gap * (vis - 1)) / vis;
+    cards.forEach(c => {
+      c.style.width    = cardW + 'px';
+      c.style.minWidth = cardW + 'px';
+    });
+  }
+
+  function buildDots() {
+    dotsEl.innerHTML = '';
+    const pages = maxIndex() + 1;
+    for (let i = 0; i < pages; i++) {
+      const btn = document.createElement('button');
+      // active dot: wider pill in blue; inactive: small circle
+      btn.className = i === cur
+        ? 'h-2 w-5 rounded-full bg-blue border-0 cursor-pointer transition-all duration-300 p-0'
+        : 'h-2 w-2 rounded-full bg-white/20 border-0 cursor-pointer transition-all duration-300 p-0';
+      btn.setAttribute('aria-label', 'Go to project ' + (i + 1));
+      btn.addEventListener('click', () => go(i));
+      dotsEl.appendChild(btn);
+    }
+  }
+
+  function go(n) {
+    cur = Math.max(0, Math.min(n, maxIndex()));
+    const cardW = cards[0].offsetWidth + 20; // card + gap
+    track.style.transform = `translateX(-${cur * cardW}px)`;
+    buildDots();
+    counterEl.textContent =
+      String(cur + 1).padStart(2, '0') + ' / ' + String(maxIndex() + 1).padStart(2, '0');
+  }
+
+  document.getElementById('op-prev').addEventListener('click', () => go(cur - 1));
+  document.getElementById('op-next').addEventListener('click', () => go(cur + 1));
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      setCardWidths();
+      cur = Math.min(cur, maxIndex());
+      go(cur);
+    }, 100);
+  });
+
+  // Init
+  setCardWidths();
+  buildDots();
+  go(0);
+})();
 </script>
 </body>
 </html>

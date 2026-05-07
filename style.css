@@ -1,4 +1,4 @@
- body { font-family: 'Barlow', sans-serif; }
+body { font-family: 'Barlow', sans-serif; }
   .font-condensed { font-family: 'Barlow Condensed', sans-serif; }
   .clip-services {
     clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%);
@@ -8,6 +8,10 @@
       linear-gradient(135deg, rgba(10,22,40,0.95) 0%, rgba(10,22,40,0.7) 50%, rgba(10,22,40,0.85) 100%),
       url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=80') center/cover no-repeat;
   }
+  #op-track {
+  will-change: transform;
+}
+
   .grid-overlay {
     background-image:
       linear-gradient(rgba(74,163,232,0.05) 1px, transparent 1px),
@@ -29,7 +33,55 @@
   .animate-fade-up-3 { animation: fadeUp 0.7s ease both 0.55s; }
   .animate-fade-up-4 { animation: fadeUp 0.7s ease both 0.7s; }
   .animate-fade-up-5 { animation: fadeUp 0.7s ease both 0.85s; }
-
+ 
   /* Mobile nav toggle */
   #mobile-menu { display: none; }
   #mobile-menu.open { display: flex; }
+ 
+  /* ── SLIDESHOW ── */
+  .slide { display: none; }
+  .slide.active { display: block; }
+ 
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  .slide.active.anim-right { animation: slideIn 0.45s ease both; }
+  .slide.active.anim-left  { animation: slideInLeft 0.45s ease both; }
+ 
+  /* ── ONGOING PROJECTS progress bars ── */
+  .progress-bar { transition: width 1.4s cubic-bezier(0.4,0,0.2,1); }
+ 
+  /* ── VISION CARD hover glow ── */
+  .vision-card {
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .vision-card:hover { transform: translateY(-4px); }
+  .vision-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    box-shadow: 0 0 30px rgba(79,179,232,0.18);
+  }
+  .vision-card:hover::before { opacity: 1; }
+ 
+  /* ── VALUE PILL ── */
+  .value-pill {
+    background: linear-gradient(135deg, rgba(26,111,196,0.15), rgba(79,179,232,0.08));
+    border: 1px solid rgba(79,179,232,0.25);
+    transition: background 0.3s, border-color 0.3s, transform 0.25s;
+  }
+  .value-pill:hover {
+    background: linear-gradient(135deg, rgba(26,111,196,0.3), rgba(79,179,232,0.15));
+    border-color: rgba(79,179,232,0.5);
+    transform: translateY(-2px);
+  }
